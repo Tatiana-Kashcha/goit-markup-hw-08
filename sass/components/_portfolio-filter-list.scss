@@ -1,0 +1,44 @@
+/* main Портфоліо */
+
+/* Секція "project" */
+/* ----Блок filter-------- */
+.filter-list {
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    &__item:not(:first-child) {
+        margin-left: 8px;
+    }
+
+    &__btn {
+        color: var(--title-text-color);
+        background-color: var(--secondary-background-color);
+        border-radius: 4px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.62;
+        letter-spacing: 0.03em;
+        cursor: pointer;
+        font-family: inherit;
+
+        border-color: transparent;
+        box-shadow: none;
+        min-width: 73px;
+        padding: 6px 22px;
+
+        transition:
+        color 250ms var(--cubic-bezier), 
+        background-color 250ms var(--cubic-bezier),
+        box-shadow 250ms var(--cubic-bezier);
+    }
+
+    &__btn:hover, &__btn:focus {
+        color: var(--accent-text-color);
+        background-color: var(--primary-accent-color);
+
+        box-shadow: var(--filter-shadow-color);
+    }
+}
