@@ -69,8 +69,10 @@ img {
 }
 
 .container {
-  margin: 0 auto;
-  padding: 0 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -276,16 +278,32 @@ img {
 /* Секція "advantage" */
 .advantage-list {
   list-style: none;
-  display: flex;
+  margin-top: -30px;
+}
+@media screen and (min-width: 768px) {
+  .advantage-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
 }
 .advantage-list__item {
-  flex-basis: 270px;
+  max-width: 100%;
+  margin-top: 30px;
 }
-.advantage-list__item:not(:first-child) {
-  margin-left: 30px;
+@media screen and (min-width: 768px) {
+  .advantage-list__item {
+    flex-basis: calc(50% - 30px);
+    margin-left: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantage-list__item {
+    flex-basis: calc(25% - 30px);
+  }
 }
 .advantage-list__icon {
-  width: 270px;
+  width: 100%;
   height: 120px;
   background-color: var(--secondary-background-color);
   border-radius: 4px;
