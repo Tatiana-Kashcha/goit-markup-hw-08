@@ -58,14 +58,34 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .container {
-  width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .visually-hidden {
@@ -88,10 +108,16 @@ img {
   font-family: var(--font-family-special);
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   text-decoration: none;
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 .logo__accent {
   color: var(--secondary-text-color);
@@ -187,12 +213,17 @@ img {
 /* main Студія */
 /* Секція "hero" */
 .hero {
-  background-color: var(--hero-background-color);
   text-align: center;
-  padding: 200px 0;
+  padding: 118px 0;
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-color: var(--hero-background-color);
+    padding: 200px 0;
+  }
 }
 .hero--overlay {
-  max-width: 1600px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Img-hero.jpg");
@@ -200,16 +231,28 @@ img {
   background-position: center;
   background-size: cover;
 }
+@media screen and (min-width: 1200px) {
+  .hero--overlay {
+    max-width: 1600px;
+  }
+}
 .hero__title {
   color: var(--accent-text-color);
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  width: 696px;
+  max-width: 360px;
   margin: 0 auto;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+  }
 }
 .hero__btn {
   color: var(--accent-text-color);
@@ -222,8 +265,7 @@ img {
   letter-spacing: 0.06em;
   font-family: inherit;
   border-color: transparent;
-  min-width: 216px;
-  padding: 10px 32px;
+  padding: 10px 24px;
   box-shadow: 0px 4px 4px var(--btn-shadow-color);
   transition: background-color 250ms var(--cubic-bezier);
 }
@@ -270,6 +312,11 @@ img {
 /* Секція "work" */
 .section--work {
   padding-top: 0;
+}
+@media screen and (max-width: 1199px) {
+  .section--work {
+    display: none;
+  }
 }
 
 .work-title {
