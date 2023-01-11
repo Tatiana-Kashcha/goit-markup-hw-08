@@ -26,6 +26,22 @@
                 <a class="logo bloc-nav__logo" href="./index.html">
                     Web<span class="logo__accent">Studio</span>
                 </a>
+
+                <button 
+                    type="button" 
+                    class="menu-button" 
+                    aria-expanded="false" 
+                    aria-controls="menu-container" data-menu-button
+                >
+                    <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+                        <use class="icon-cross" href="./images/icons.svg#icon-close_40px"></use>
+                        <use class="icon-menu" href="./images/icons.svg#icon-menu_40px"></use>
+                    </svg>
+                </button>
+
+                <div class="menu-container" id="menu-container" data-menu>
+                    Контент меню
+                </div>
         
                 <ul class="navigation-list">
                     <li class="navigation-list__item"><a class="navigation-list__link navigation-list__link--current" href="./index.html">Студія</a></li>
@@ -563,5 +579,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>

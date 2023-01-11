@@ -129,6 +129,11 @@ img {
 .page-header {
   border-bottom: 1px solid var(--header-border-color);
 }
+@media screen and (max-width: 767px) {
+  .page-header {
+    position: relative;
+  }
+}
 
 .container--header {
   display: flex;
@@ -1153,4 +1158,44 @@ img {
 }
 .form__btn-submit:hover {
   background-color: var(--secondary-accent-color);
+}
+
+.menu-button {
+  background-color: inherit;
+  border: none;
+  padding: 0;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.icon-cross {
+  display: none;
+}
+
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  background-color: var(--primary-background-color);
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+.menu-container.is-open {
+  display: block;
 }/*# sourceMappingURL=main.css.map */
