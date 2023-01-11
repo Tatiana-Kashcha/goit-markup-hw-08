@@ -9,8 +9,7 @@
     flex-wrap: wrap;
     
     width: 100%;
-    margin-bottom: 40px;
-
+    
     @media screen and (min-width: 480px) and (max-width: 767px) {
        width: 350px; 
     }
@@ -18,6 +17,10 @@
     @media screen and (max-width: 767px) {
        margin-right: calc(-1 * 8px);
        margin-top: calc(-1 * 15px); 
+       margin-bottom: 70px;
+    //    якось зжирається 30рх на цій ширині.. як?? тому костиль 70рх 
+    //    відступ повинен бути
+    //    margin-bottom: 40px;
     }
 
     @media screen and (min-width: 768px) {
@@ -31,10 +34,6 @@
         margin-bottom: 50px;
     }
 
-    &__item:not(:last-child) {
-        margin-right: 8px;
-    }
-
     &__item {
         margin-top: 15px;
 
@@ -43,7 +42,10 @@
         @media screen and (min-width: 768px) {
            margin-top: 0;
         }
+    }
 
+    &__item:not(:last-child) {
+        margin-right: 8px;
     }
 
     &__btn {

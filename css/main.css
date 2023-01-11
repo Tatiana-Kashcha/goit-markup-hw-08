@@ -558,7 +558,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  margin-bottom: 40px;
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .filter-list {
@@ -569,6 +568,7 @@ img {
   .filter-list {
     margin-right: -8px;
     margin-top: -15px;
+    margin-bottom: 70px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -583,9 +583,6 @@ img {
     margin-bottom: 50px;
   }
 }
-.filter-list__item:not(:last-child) {
-  margin-right: 8px;
-}
 .filter-list__item {
   margin-top: 15px;
   display: flex;
@@ -594,6 +591,9 @@ img {
   .filter-list__item {
     margin-top: 0;
   }
+}
+.filter-list__item:not(:last-child) {
+  margin-right: 8px;
 }
 .filter-list__btn {
   color: var(--title-text-color);
@@ -619,15 +619,29 @@ img {
 /* ----Блок project-list-------- */
 .project-list {
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: calc(-1 * var(--project-card-set-gap));
   margin-top: calc(-1 * var(--project-card-set-gap));
 }
+@media screen and (min-width: 768px) {
+  .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--project-card-set-gap));
+  }
+}
 .project-list__item {
-  flex-basis: calc(33.3333333333% - var(--project-card-set-gap));
-  margin-left: var(--project-card-set-gap);
+  max-width: 100%;
   margin-top: var(--project-card-set-gap);
+}
+@media screen and (min-width: 768px) {
+  .project-list__item {
+    flex-basis: calc(50% - var(--project-card-set-gap));
+    margin-left: var(--project-card-set-gap);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project-list__item {
+    flex-basis: calc(33.3333333333% - var(--project-card-set-gap));
+  }
 }
 .project-list__link {
   text-decoration: none;
@@ -643,6 +657,11 @@ img {
   border-bottom: 1px solid var(--project-border-color);
   border-left: 1px solid var(--project-border-color);
   padding: 20px 24px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .project-list__card--first {
+    padding-bottom: 56px;
+  }
 }
 .project-list__title {
   color: var(--title-text-color);
