@@ -18,9 +18,10 @@
        margin-right: calc(-1 * 8px);
        margin-top: calc(-1 * 15px); 
        margin-bottom: 70px;
-    //    якось зжирається 30рх на цій ширині.. як?? тому костиль 70рх 
-    //    відступ повинен бути
-    //    margin-bottom: 40px;
+        //    десь зжирається 30рх на ширині max-width:767px
+        //    але як?? тому зробила "костиль" 70рх 
+        //    відступ повинен бути
+        //    margin-bottom: 40px;
     }
 
     @media screen and (min-width: 768px) {
