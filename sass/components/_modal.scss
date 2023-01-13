@@ -56,7 +56,7 @@
         transition: color 250ms var(--cubic-bezier);
     }
 
-    &__btn-close:hover {
+    &__btn-close:hover, &__btn-close:focus {
         color: var(--primary-accent-color);
     }
 

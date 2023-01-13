@@ -17,7 +17,7 @@
         transform: translateX(0);
     }
 
-    &__button-open, &__button-close {
+    &__button {
         width: 40px;
         height: 40px;
         padding: 0;
@@ -35,13 +35,13 @@
 
         transition: color 250ms var(--cubic-bezier);
 
-        &:hover {
-            color: var(--primary-accent-color);
-        }
-
         @media screen and (min-width: 768px) {
             display: none;
         }
+    }
+
+    &__button:hover, &__button:focus {
+        color: var(--primary-accent-color);
     }
 
     &__icon-open, &__icon-close {
@@ -74,5 +74,41 @@
 
     &__link--current {
         color: var(--primary-accent-color);
-    }
+    } 
 }
+
+/* Mobile menu -- список контактів*/
+
+.mobile-menu-contact {
+    list-style: none;
+    display: inline-block;
+    // margin-top: auto;
+
+    &__item:not(:first-child) {
+        margin-top: 32px;
+    }
+
+    &__link {
+        text-decoration: none;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+    }
+
+    &__link--tel {
+        font-size: 34px;
+        line-height: 1.17;
+        color: var(--primary-accent-color);
+
+        @media screen and (max-width: 390px) {
+            font-size: 26px;
+        }
+    }
+
+    &__link--mailto {
+        font-size: 24px;
+        line-height: 1.16;
+        color: var(--primary-text-color);
+    }
+
+}
+

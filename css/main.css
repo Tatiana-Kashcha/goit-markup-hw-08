@@ -691,8 +691,10 @@ img {
   }
 }
 .project-list__link {
+  height: 100%;
   text-decoration: none;
-  display: block;
+  display: flex;
+  flex-direction: column;
   box-shadow: none;
   transition: box-shadow 250ms var(--cubic-bezier);
 }
@@ -704,11 +706,7 @@ img {
   border-bottom: 1px solid var(--project-border-color);
   border-left: 1px solid var(--project-border-color);
   padding: 20px 24px;
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .project-list__card--first {
-    padding-bottom: 56px;
-  }
+  flex-grow: 1;
 }
 .project-list__title {
   color: var(--title-text-color);
@@ -998,7 +996,7 @@ img {
   right: 8px;
   transition: color 250ms var(--cubic-bezier);
 }
-.modal__btn-close:hover {
+.modal__btn-close:hover, .modal__btn-close:focus {
   color: var(--primary-accent-color);
 }
 .modal__icon-close {
@@ -1191,7 +1189,7 @@ img {
 .mobile-menu.is-open {
   transform: translateX(0);
 }
-.mobile-menu__button-open, .mobile-menu__button-close {
+.mobile-menu__button {
   width: 40px;
   height: 40px;
   padding: 0;
@@ -1206,13 +1204,13 @@ img {
   right: 15px;
   transition: color 250ms var(--cubic-bezier);
 }
-.mobile-menu__button-open:hover, .mobile-menu__button-close:hover {
-  color: var(--primary-accent-color);
-}
 @media screen and (min-width: 768px) {
-  .mobile-menu__button-open, .mobile-menu__button-close {
+  .mobile-menu__button {
     display: none;
   }
+}
+.mobile-menu__button:hover, .mobile-menu__button:focus {
+  color: var(--primary-accent-color);
 }
 .mobile-menu__icon-open, .mobile-menu__icon-close {
   fill: currentColor;
@@ -1238,4 +1236,33 @@ img {
 }
 .mobile-menu__link--current {
   color: var(--primary-accent-color);
+}
+
+/* Mobile menu -- список контактів*/
+.mobile-menu-contact {
+  list-style: none;
+  display: inline-block;
+}
+.mobile-menu-contact__item:not(:first-child) {
+  margin-top: 32px;
+}
+.mobile-menu-contact__link {
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+.mobile-menu-contact__link--tel {
+  font-size: 34px;
+  line-height: 1.17;
+  color: var(--primary-accent-color);
+}
+@media screen and (max-width: 390px) {
+  .mobile-menu-contact__link--tel {
+    font-size: 26px;
+  }
+}
+.mobile-menu-contact__link--mailto {
+  font-size: 24px;
+  line-height: 1.16;
+  color: var(--primary-text-color);
 }/*# sourceMappingURL=main.css.map */
