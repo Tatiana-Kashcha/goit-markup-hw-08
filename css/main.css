@@ -368,6 +368,11 @@ img {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
+@media screen and (max-width: 767px) {
+  .advantage-list__title {
+    text-align: center;
+  }
+}
 .advantage-list__descr {
   font-size: 14px;
   line-height: 1.71;
