@@ -961,6 +961,7 @@ img {
   background-color: var(--modal-backdrop-color);
   opacity: 1;
   transition: opacity 250ms var(--cubic-bezier);
+  overflow-y: scroll;
 }
 .backdrop--is-hidden {
   opacity: 0;
@@ -1185,6 +1186,7 @@ img {
   height: 100vh;
   transform: translateX(100%);
   transition: transform 250ms var(--cubic-bezier);
+  overflow-y: scroll;
 }
 .mobile-menu.is-open {
   transform: translateX(0);
@@ -1238,10 +1240,10 @@ img {
   color: var(--primary-accent-color);
 }
 
-/* Mobile menu -- список контактів*/
+/* Mobile menu  Список контактів*/
 .mobile-menu-contact {
   list-style: none;
-  display: inline-block;
+  margin-top: 100%;
 }
 .mobile-menu-contact__item:not(:first-child) {
   margin-top: 32px;
@@ -1256,13 +1258,80 @@ img {
   line-height: 1.17;
   color: var(--primary-accent-color);
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 325px) {
   .mobile-menu-contact__link--tel {
     font-size: 26px;
+  }
+}
+@media screen and (min-width: 326px) and (max-width: 341px) {
+  .mobile-menu-contact__link--tel {
+    font-size: 28px;
+  }
+}
+@media screen and (min-width: 342px) and (max-width: 359px) {
+  .mobile-menu-contact__link--tel {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 377px) {
+  .mobile-menu-contact__link--tel {
+    font-size: 32px;
   }
 }
 .mobile-menu-contact__link--mailto {
   font-size: 24px;
   line-height: 1.16;
   color: var(--primary-text-color);
+}
+
+/* Mobile menu  Список соціальних мереж */
+.mobile-menu-social {
+  list-style: none;
+  display: flex;
+  margin-top: 64px;
+}
+.mobile-menu-social__item {
+  display: flex;
+  position: relative;
+}
+.mobile-menu-social__item:not(:last-child) {
+  margin-right: 20px;
+}
+.mobile-menu-social__item:not(:last-child)::after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 1px;
+  background-color: var(--form-border-color);
+  position: absolute;
+  right: -10px;
+  bottom: 0;
+}
+.mobile-menu-social__link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--primary-accent-color);
+}
+@media screen and (max-width: 341px) {
+  .mobile-menu-social__link {
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 342px) and (max-width: 377px) {
+  .mobile-menu-social__link {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 378px) and (max-width: 407px) {
+  .mobile-menu-social__link {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 408px) and (max-width: 447px) {
+  .mobile-menu-social__link {
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=main.css.map */

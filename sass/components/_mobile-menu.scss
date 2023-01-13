@@ -13,6 +13,8 @@
     transform: translateX(100%);
     transition: transform 250ms var(--cubic-bezier);
 
+    overflow-y: scroll;
+
     &.is-open {
         transform: translateX(0);
     }
@@ -77,12 +79,12 @@
     } 
 }
 
-/* Mobile menu -- список контактів*/
+/* Mobile menu  Список контактів*/
 
 .mobile-menu-contact {
     list-style: none;
-    display: inline-block;
-    // margin-top: auto;
+    // display: inline-block;
+    margin-top: 100%;
 
     &__item:not(:first-child) {
         margin-top: 32px;
@@ -99,8 +101,20 @@
         line-height: 1.17;
         color: var(--primary-accent-color);
 
-        @media screen and (max-width: 390px) {
+        @media screen and (max-width: 325px) {
             font-size: 26px;
+        }
+
+        @media screen and (min-width: 326px) and (max-width: 341px) {
+            font-size: 28px; 
+        }
+
+        @media screen and (min-width: 342px) and (max-width: 359px) {
+            font-size: 30px; 
+        }
+
+        @media screen and (min-width: 360px) and (max-width: 377px) {
+            font-size: 32px; 
         }
     }
 
@@ -110,5 +124,62 @@
         color: var(--primary-text-color);
     }
 
+}
+
+/* Mobile menu  Список соціальних мереж */
+
+.mobile-menu-social {
+    list-style: none;
+    display: flex;
+
+    margin-top: 64px;
+
+    &__item {
+        display: flex; 
+        position: relative;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    &__item:not(:last-child)::after {
+        content: "";
+        display: block;
+        height: 100%;
+        width: 1px;
+        background-color: var(--form-border-color);
+        position: absolute;
+        right: -10px;
+        bottom: 0;  
+    }
+
+    &__link {
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: 0.02em;
+
+        color: var(--primary-accent-color);
+
+        @media screen and (max-width: 341px) {
+            font-size: 10px;
+        }
+
+        @media screen and (min-width: 342px) and (max-width: 377px) {
+            font-size: 12px; 
+        }
+
+        @media screen and (min-width: 378px) and (max-width: 407px) {
+            font-size: 14px; 
+        }
+
+        @media screen and (min-width: 408px) and (max-width: 447px) {
+            font-size: 16px; 
+        }
+    }
+
+    
 }
 
