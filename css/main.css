@@ -1258,24 +1258,9 @@ img {
   line-height: 1.17;
   color: var(--primary-accent-color);
 }
-@media screen and (max-width: 325px) {
+@media screen and (max-width: 477px) {
   .mobile-menu-contact__link--tel {
-    font-size: 26px;
-  }
-}
-@media screen and (min-width: 326px) and (max-width: 341px) {
-  .mobile-menu-contact__link--tel {
-    font-size: 28px;
-  }
-}
-@media screen and (min-width: 342px) and (max-width: 359px) {
-  .mobile-menu-contact__link--tel {
-    font-size: 30px;
-  }
-}
-@media screen and (min-width: 360px) and (max-width: 377px) {
-  .mobile-menu-contact__link--tel {
-    font-size: 32px;
+    font-size: 8vw;
   }
 }
 .mobile-menu-contact__link--mailto {
@@ -1315,23 +1300,8 @@ img {
   letter-spacing: 0.02em;
   color: var(--primary-accent-color);
 }
-@media screen and (max-width: 341px) {
+@media screen and (max-width: 447px) {
   .mobile-menu-social__link {
-    font-size: 10px;
-  }
-}
-@media screen and (min-width: 342px) and (max-width: 377px) {
-  .mobile-menu-social__link {
-    font-size: 12px;
-  }
-}
-@media screen and (min-width: 378px) and (max-width: 407px) {
-  .mobile-menu-social__link {
-    font-size: 14px;
-  }
-}
-@media screen and (min-width: 408px) and (max-width: 447px) {
-  .mobile-menu-social__link {
-    font-size: 16px;
+    font-size: 3.4vw;
   }
 }/*# sourceMappingURL=main.css.map */
