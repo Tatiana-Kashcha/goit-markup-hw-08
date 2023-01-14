@@ -748,20 +748,26 @@ img {
 .project-list__container {
   position: relative;
   overflow: hidden;
-  display: flex;
 }
 .project-list__link:hover .project-list__overlay, .project-list__link:focus .project-list__overlay {
   transform: translateY(-100%);
 }
 .project-list__overlay {
   background-color: var(--project-overlay-color);
+  width: 100%;
+  height: 100%;
   padding: 63px 24px;
   position: absolute;
   top: 100%;
   left: 0;
-  flex-grow: 1;
   transform: translateY(0);
   transition: transform 250ms var(--cubic-bezier);
+}
+@media screen and (max-width: 479px) {
+  .project-list__overlay {
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+  }
 }
 .project-list__text {
   color: var(--accent-text-color);
@@ -1292,6 +1298,11 @@ img {
   font-size: 24px;
   line-height: 1.16;
   color: var(--primary-text-color);
+}
+@media screen and (max-width: 320px) {
+  .mobile-menu-contact__link--mailto {
+    font-size: 8vw;
+  }
 }
 
 /* Mobile menu  Список соціальних мереж */
