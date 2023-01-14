@@ -135,6 +135,11 @@
         align-items: center;
 
         transition: color 250ms var(--cubic-bezier);
+
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            font-size: 12px;
+            line-height: 1.16;
+        }
     }
 
     &__link:hover, &__link:focus {
@@ -145,5 +150,9 @@
         fill: currentColor;
         
         margin-right: 10px;
+
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            margin-right: 8px;
+        }
     }
 }

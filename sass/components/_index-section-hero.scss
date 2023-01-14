@@ -3,11 +3,11 @@
 /* Секція "hero" */
 
 .hero {
+    background-color: var(--hero-background-color);
     text-align: center;
     padding: 118px 0;
 
     @media screen and (min-width: 1200px) {
-      background-color: var(--hero-background-color);
       padding: 200px 0;
     }
 

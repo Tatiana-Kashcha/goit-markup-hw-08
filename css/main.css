@@ -251,6 +251,12 @@ img {
   align-items: center;
   transition: color 250ms var(--cubic-bezier);
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact-list__link {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
 .contact-list__link:hover, .contact-list__link:focus {
   color: var(--primary-accent-color);
 }
@@ -258,16 +264,21 @@ img {
   fill: currentColor;
   margin-right: 10px;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact-list__icon {
+    margin-right: 8px;
+  }
+}
 
 /* main Студія */
 /* Секція "hero" */
 .hero {
+  background-color: var(--hero-background-color);
   text-align: center;
   padding: 118px 0;
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    background-color: var(--hero-background-color);
     padding: 200px 0;
   }
 }
@@ -613,14 +624,14 @@ img {
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .filter-list {
-    width: 350px;
+    max-width: 350px;
   }
 }
 @media screen and (max-width: 767px) {
   .filter-list {
     margin-right: -8px;
     margin-top: -15px;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -662,6 +673,13 @@ img {
   padding: 6px 22px;
   transition: color 250ms var(--cubic-bezier), background-color 250ms var(--cubic-bezier), box-shadow 250ms var(--cubic-bezier);
 }
+@media screen and (max-width: 374px) {
+  .filter-list__btn {
+    font-size: 4vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+}
 .filter-list__btn:hover, .filter-list__btn:focus {
   color: var(--accent-text-color);
   background-color: var(--primary-accent-color);
@@ -671,13 +689,13 @@ img {
 /* ----Блок project-list-------- */
 .project-list {
   list-style: none;
-  margin-top: calc(-1 * var(--project-card-set-gap));
 }
 @media screen and (min-width: 768px) {
   .project-list {
     display: flex;
     flex-wrap: wrap;
     margin-left: calc(-1 * var(--project-card-set-gap));
+    margin-top: calc(-1 * var(--project-card-set-gap));
   }
 }
 .project-list__item {
@@ -730,6 +748,7 @@ img {
 .project-list__container {
   position: relative;
   overflow: hidden;
+  display: flex;
 }
 .project-list__link:hover .project-list__overlay, .project-list__link:focus .project-list__overlay {
   transform: translateY(-100%);
@@ -740,6 +759,7 @@ img {
   position: absolute;
   top: 100%;
   left: 0;
+  flex-grow: 1;
   transform: translateY(0);
   transition: transform 250ms var(--cubic-bezier);
 }
@@ -748,6 +768,11 @@ img {
   font-size: 18px;
   line-height: 1.55;
   letter-spacing: 0.03em;
+}
+@media screen and (max-width: 374px) {
+  .project-list__text {
+    font-size: 4.5vw;
+  }
 }
 
 /* footer */

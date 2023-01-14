@@ -11,17 +11,13 @@
     width: 100%;
     
     @media screen and (min-width: 480px) and (max-width: 767px) {
-       width: 350px; 
+       max-width: 350px; 
     }
 
     @media screen and (max-width: 767px) {
-       margin-right: calc(-1 * 8px);
-       margin-top: calc(-1 * 15px); 
-       margin-bottom: 70px;
-        //    десь зжирається 30рх на ширині max-width:767px
-        //    але як?? тому зробила "костиль" 70рх 
-        //    відступ повинен бути
-        //    margin-bottom: 40px;
+        margin-right: calc(-1 * 8px);
+        margin-top: calc(-1 * 15px); 
+        margin-bottom: 40px;
     }
 
     @media screen and (min-width: 768px) {
@@ -68,6 +64,12 @@
         color 250ms var(--cubic-bezier), 
         background-color 250ms var(--cubic-bezier),
         box-shadow 250ms var(--cubic-bezier);
+
+        @media screen and (max-width: 374px) {
+            font-size: 4vw;
+            padding-left: 4vw;
+            padding-right: 4vw;
+        }
     }
 
     &__btn:hover, &__btn:focus {
