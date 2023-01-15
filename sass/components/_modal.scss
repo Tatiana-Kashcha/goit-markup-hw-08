@@ -29,15 +29,26 @@
     top: 50%;
     left: 50%;
 
-    height: 581px;
-    width: 528px;
     background-color: var(--primary-background-color);
-
     padding: 40px;
 
     transform: translate(-50%, -50%) scale(1);
-
+    
     transition: transform 250ms var(--cubic-bezier);
+
+    @media screen and (max-width: 449px) {
+        width: 100%;
+    }
+
+    @media screen and (min-width: 450px) and (max-width: 1199px) {
+        height: 609px;
+        width: 450px; 
+    }
+
+    @media screen and (min-width: 1200px) {
+        height: 581px;
+        width: 528px;
+    }
 
     &__btn-close {
         width: 30px;
@@ -76,5 +87,9 @@
         text-align: center;
 
         margin-bottom: 12px;
+
+        @media screen and (max-width: 1199px) {
+            line-height: 1.5;
+        }
     }
 }

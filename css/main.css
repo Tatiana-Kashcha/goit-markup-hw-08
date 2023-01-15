@@ -1006,12 +1006,27 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  height: 581px;
-  width: 528px;
   background-color: var(--primary-background-color);
   padding: 40px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms var(--cubic-bezier);
+}
+@media screen and (max-width: 449px) {
+  .modal {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 450px) and (max-width: 1199px) {
+  .modal {
+    height: 609px;
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    height: 581px;
+    width: 528px;
+  }
 }
 .modal__btn-close {
   width: 30px;
@@ -1042,6 +1057,11 @@ img {
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 12px;
+}
+@media screen and (max-width: 1199px) {
+  .modal__title {
+    line-height: 1.5;
+  }
 }
 
 /* ---Блок form--- */
@@ -1125,14 +1145,25 @@ img {
   position: relative;
 }
 .form__label-check {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   display: flex;
   align-items: center;
   position: relative;
   padding-left: 35px;
+}
+@media screen and (max-width: 450px) {
+  .form__label-check {
+    font-size: 3vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form__label-check {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .form__input-check {
   position: absolute;
@@ -1162,15 +1193,27 @@ img {
   transition: background-color 250ms var(--cubic-bezier), border 250ms var(--cubic-bezier);
 }
 .form__contract-check {
+  display: flex;
   position: relative;
   margin-left: 5px;
 }
 .form__link-contract {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--primary-accent-color);
   text-decoration: none;
+}
+@media screen and (max-width: 450px) {
+  .form__link-contract {
+    font-size: 3vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form__link-contract {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .form__link-contract::after {
   content: "";
@@ -1180,7 +1223,11 @@ img {
   background-color: var(--primary-accent-color);
   position: absolute;
   left: 0;
-  bottom: 5.5px;
+}
+@media screen and (min-width: 1199px) {
+  .form__link-contract::after {
+    bottom: 5.5px;
+  }
 }
 .form__bloc-btn {
   display: flex;

@@ -87,11 +87,12 @@
         align-items: center;
 
         position: relative;
+
     }
 
     &__label-check {
-        font-size: 14px;
-        line-height: 1.71;
+        font-size: 12px;
+        line-height: 1.16;
         letter-spacing: 0.03em;
 
         color: var(--primary-text-color);
@@ -101,6 +102,15 @@
 
         position: relative;
         padding-left: 35px;
+
+        @media screen and (max-width: 450px) {
+            font-size: 3vw;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 14px;
+            line-height: 1.71;
+        }  
     }
 
     &__input-check {
@@ -136,17 +146,27 @@
     }
 
     &__contract-check {
+        display: flex;
         position: relative;
         margin-left: 5px;
     }
 
     &__link-contract {
-        font-size: 14px;
-        line-height: 1.71;
+        font-size: 12px;
+        line-height: 1.16;
         letter-spacing: 0.03em;
 
         color: var(--primary-accent-color);
         text-decoration: none;
+
+        @media screen and (max-width: 450px) {
+            font-size: 3vw;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 14px;
+            line-height: 1.71;
+        }   
     }
 
     &__link-contract::after {
@@ -157,7 +177,11 @@
         background-color: var(--primary-accent-color);
         position: absolute;
         left: 0;
-        bottom: 5.5px;  
+
+        @media screen and (min-width: 1199px) {
+            bottom: 5.5px;
+        }   
+          
     }
 
     &__bloc-btn {
