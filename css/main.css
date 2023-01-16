@@ -797,9 +797,9 @@ img {
   line-height: 1.55;
   letter-spacing: 0.03em;
 }
-@media screen and (max-width: 374px) {
+@media screen and (max-width: 390px) {
   .project-list__text {
-    font-size: 4.5vw;
+    font-size: 4vw;
   }
 }
 
