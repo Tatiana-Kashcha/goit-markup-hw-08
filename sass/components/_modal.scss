@@ -9,10 +9,9 @@
     background-color: var(--modal-backdrop-color);
 
     opacity: 1;
+    overflow-y: scroll;
 
     transition: opacity 250ms var(--cubic-bezier);
-
-    overflow-y: scroll;
 
     &--is-hidden {
         opacity: 0;
@@ -35,6 +34,7 @@
     transform: translate(-50%, -50%) scale(1);
     
     transition: transform 250ms var(--cubic-bezier);
+
 
     @media screen and (max-width: 449px) {
         width: 100%;
