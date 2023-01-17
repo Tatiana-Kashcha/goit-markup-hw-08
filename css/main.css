@@ -1368,7 +1368,7 @@ img {
   line-height: 1.17;
   color: var(--primary-accent-color);
 }
-@media screen and (max-width: 477px) {
+@media screen and (max-width: 479px) {
   .mobile-menu-contact__link--tel {
     font-size: 8vw;
   }
