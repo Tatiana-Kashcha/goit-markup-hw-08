@@ -1034,7 +1034,7 @@ img {
   padding: 40px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms var(--cubic-bezier);
-  /* Коригує положення верху модалки для мобілок  */
+  /* Коригує положення верху модалки для мобілки  */
 }
 @media screen and (max-width: 454px) {
   .modal {
@@ -1043,7 +1043,7 @@ img {
 }
 @media screen and (max-width: 479px) {
   .modal {
-    top: 70%;
+    top: 75%;
   }
 }
 @media screen and (min-width: 455px) and (max-width: 1199px) {
