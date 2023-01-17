@@ -161,6 +161,7 @@
 
         @media screen and (max-width: 450px) {
             font-size: 3vw;
+            text-decoration: underline;
         }
 
         @media screen and (min-width: 1200px) {
@@ -178,10 +179,13 @@
         position: absolute;
         left: 0;
 
+        @media screen and (max-width: 450px) {
+            display: none;
+        }
+
         @media screen and (min-width: 1199px) {
             bottom: 5.5px;
-        }   
-          
+        }      
     }
 
     &__bloc-btn {

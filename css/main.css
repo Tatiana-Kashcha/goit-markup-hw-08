@@ -1035,12 +1035,12 @@ img {
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms var(--cubic-bezier);
 }
-@media screen and (max-width: 449px) {
+@media screen and (max-width: 454px) {
   .modal {
     width: 100%;
   }
 }
-@media screen and (min-width: 450px) and (max-width: 1199px) {
+@media screen and (min-width: 455px) and (max-width: 1199px) {
   .modal {
     height: 609px;
     width: 450px;
@@ -1231,6 +1231,7 @@ img {
 @media screen and (max-width: 450px) {
   .form__link-contract {
     font-size: 3vw;
+    text-decoration: underline;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1247,6 +1248,11 @@ img {
   background-color: var(--primary-accent-color);
   position: absolute;
   left: 0;
+}
+@media screen and (max-width: 450px) {
+  .form__link-contract::after {
+    display: none;
+  }
 }
 @media screen and (min-width: 1199px) {
   .form__link-contract::after {

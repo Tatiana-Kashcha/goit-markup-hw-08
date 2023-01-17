@@ -36,11 +36,11 @@
     transition: transform 250ms var(--cubic-bezier);
 
 
-    @media screen and (max-width: 449px) {
+    @media screen and (max-width: 454px) {
         width: 100%;
     }
 
-    @media screen and (min-width: 450px) and (max-width: 1199px) {
+    @media screen and (min-width: 455px) and (max-width: 1199px) {
         height: 609px;
         width: 450px; 
     }
