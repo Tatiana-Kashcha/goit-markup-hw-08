@@ -1038,6 +1038,10 @@ img {
 @media screen and (max-width: 454px) {
   .modal {
     width: 100%;
+  }
+}
+@media screen and (max-width: 479px) {
+  .modal {
     top: 70%;
   }
 }
