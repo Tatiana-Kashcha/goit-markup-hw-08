@@ -39,7 +39,8 @@
     @media screen and (max-width: 454px) {
         width: 100%;
     }
-
+    
+    /* Коригує положення верху модалки для мобілок  */
     @media screen and (max-width: 479px) {
         top: 70%;
     }
