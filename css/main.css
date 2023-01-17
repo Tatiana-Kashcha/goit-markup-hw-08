@@ -269,6 +269,18 @@ img {
     margin-right: 8px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact-list__icon--mailto {
+    width: 14px;
+    height: 10px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact-list__icon--tel {
+    width: 10px;
+    height: 14px;
+  }
+}
 
 /* main Студія */
 /* Секція "hero" */
