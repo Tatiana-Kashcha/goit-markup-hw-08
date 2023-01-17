@@ -15,6 +15,9 @@
 
     overflow-y: scroll;
 
+    display: flex;
+    flex-direction: column;
+
     &.is-open {
         transform: translateX(0);
     }
@@ -53,6 +56,7 @@
     &__list {
         list-style: none;
         display: inline-block;
+        margin-bottom: auto;
     }
 
     &__item:not(:first-child) {
@@ -83,7 +87,6 @@
 
 .mobile-menu-contact {
     list-style: none;
-    margin-top: 100%;
 
     &__item:not(:first-child) {
         margin-top: 32px;

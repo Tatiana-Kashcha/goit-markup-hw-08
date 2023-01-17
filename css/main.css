@@ -214,25 +214,9 @@ img {
     display: block;
   }
 }
-.contact-list__item {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-@media screen and (min-width: 1200px) {
-  .contact-list__item {
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
-}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contact-list__item:first-child {
-    padding-top: 21px;
     margin-bottom: 10px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .contact-list__item:last-child {
-    padding-bottom: 21px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -255,6 +239,12 @@ img {
   .contact-list__link {
     font-size: 12px;
     line-height: 1.16;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-list__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 .contact-list__link:hover, .contact-list__link:focus {
@@ -1299,6 +1289,8 @@ img {
   transform: translateX(100%);
   transition: transform 250ms var(--cubic-bezier);
   overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
 }
 .mobile-menu.is-open {
   transform: translateX(0);
@@ -1332,6 +1324,7 @@ img {
 .mobile-menu__list {
   list-style: none;
   display: inline-block;
+  margin-bottom: auto;
 }
 .mobile-menu__item:not(:first-child) {
   margin-top: 32px;
@@ -1355,7 +1348,6 @@ img {
 /* Mobile menu  Список контактів*/
 .mobile-menu-contact {
   list-style: none;
-  margin-top: 100%;
 }
 .mobile-menu-contact__item:not(:first-child) {
   margin-top: 32px;
